@@ -28,11 +28,11 @@ Consultora-P3/
 │   └── layout.css        -> distribución mobile-first y media queries
 ├── img/
 │   ├── logo.png
-│   ├── hero.jpg
-│   ├── servicio-01.jpg
-│   ├── servicio-02.jpg
-│   ├── servicio-03.jpg
-│   └── equipo.jpg
+│   ├── hero.jpeg
+│   ├── servicio1.jpeg
+│   ├── servicio2.jpeg
+│   ├── servicio3.jpeg
+│   
 ├── docs/
 │   └── informe.pdf
 └── README.md
