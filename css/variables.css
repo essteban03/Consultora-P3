@@ -1,0 +1,141 @@
+:root {
+    /*paleta principal del proyecto */
+    --color-azul-niebla: #C8DCE8;
+    --color-lila-pastel: #D8D0EA;
+    --color-verde-agua: #C9E5DD;
+    --color-azul-petroleo: #405A67;
+
+    /*uso semantico de colores*/
+    --color-principal: var(--color-azul-petroleo);
+    --color-secundario: var(--color-lila-pastel);
+    --color-acento: var(--color-verde-agua);
+    --color-fondo: var(--color-azul-niebla);
+    --color-fondo-claro: #F7FAFC;
+    --color-texto: #2C3E45;
+    --color-texto-claro: #FFFFFF;
+
+    /*tipografia*/
+    --fuente-titulos: "Poppins", sans-serif;
+    --fuente-texto: "Inter", sans-serif;
+
+    /*espaciados*/
+    --espacio-sm: 0.75rem;
+    --espacio-md: 1.5rem;
+    --espacio-lg: 3rem;
+    --espacio-xl: 5rem;
+
+    /*bordes y sombras */
+    --radio-borde: 1rem;
+    --sombra-suave: 0 10px 30px rgba(64, 90, 103, 0.12);
+}
+
+/*estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-texto);
+    color: var(--color-texto);
+    background-color: var(--color-fondo-claro);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-principal);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+img {
+    display: block;
+}
+
+.seccion {
+    padding-top: var(--espacio-xl);
+    padding-bottom: var(--espacio-xl);
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: var(--espacio-lg);
+}
+
+.seccion-titulo p {
+    max-width: 620px;
+    margin: 0.5rem auto 0 auto;
+    color: var(--color-texto);
+}
+
+.eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-principal);
+    background-color: var(--color-acento);
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    margin-bottom: var(--espacio-sm);
+}
+
+.btn-consultora {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 0.75rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-consultora:hover {
+    background-color: #324752;
+    color: var(--color-texto-claro);
+    transform: translateY(-2px);
+}
+
+.btn-outline-consultora {
+    background-color: transparent;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    padding: 0.7rem 1.7rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-consultora:hover {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+}

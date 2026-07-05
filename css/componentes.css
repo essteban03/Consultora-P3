@@ -1,0 +1,261 @@
+/*encabezado*/
+.encabezado {
+    background-color: var(--color-fondo-claro);
+    box-shadow: var(--sombra-suave);
+}
+
+.encabezado .navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.encabezado .navbar-brand img {
+    height: 36px;
+}
+
+.encabezado .nav-link {
+    color: var(--color-texto);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.encabezado .nav-link:hover {
+    color: var(--color-principal);
+}
+
+/*hero*/
+.hero {
+    background: linear-gradient(180deg, var(--color-fondo) 0%, var(--color-fondo-claro) 100%);
+    padding-top: var(--espacio-xl);
+    padding-bottom: var(--espacio-xl);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-texto h1 {
+    margin-bottom: var(--espacio-sm);
+}
+
+.hero-texto p.lead {
+    font-size: 1.05rem;
+    color: var(--color-texto);
+    margin-bottom: var(--espacio-md);
+}
+
+.hero-imagen {
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-botones .btn-consultora,
+.hero-botones .btn-outline-consultora {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/*presentación de la empresa*/
+.presentacion-icono {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin-bottom: var(--espacio-sm);
+}
+
+/*tarjetas de servicios*/
+.tarjeta-servicio {
+    background-color: #FFFFFF;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    padding: var(--espacio-md);
+    height: 100%;
+    transition: transform 0.25s ease;
+    border-top: 4px solid var(--color-acento);
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta-servicio .icono-servicio {
+    font-size: 2rem;
+    color: var(--color-principal);
+    background-color: var(--color-fondo);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--espacio-sm);
+}
+
+.tarjeta-servicio img {
+    border-radius: 0.6rem;
+    margin-top: var(--espacio-sm);
+}
+
+/*proceso/seccion visual destacada*/
+.proceso {
+    background-color: var(--color-secundario);
+}
+
+.paso-proceso {
+    text-align: center;
+    padding: var(--espacio-md);
+}
+
+.paso-numero {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto var(--espacio-sm) auto;
+}
+
+.conector-proceso {
+    display: none;
+}
+
+/*indicadores*/
+.indicadores {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+}
+
+.indicadores h3 {
+    color: var(--color-texto-claro);
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.indicadores p {
+    color: var(--color-fondo);
+    margin-bottom: 0;
+}
+
+/*testimonios*/
+.tarjeta-testimonio {
+    background-color: #FFFFFF;
+    border-radius: var(--radio-borde);
+    padding: var(--espacio-md);
+    box-shadow: var(--sombra-suave);
+    height: 100%;
+}
+
+.tarjeta-testimonio .icono-usuario {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
+}
+
+.tarjeta-testimonio .autor-testimonio {
+    display: flex;
+    align-items: center;
+    margin-top: var(--espacio-sm);
+}
+
+.tarjeta-testimonio .autor-testimonio strong {
+    display: block;
+    color: var(--color-principal);
+}
+
+.tarjeta-testimonio .autor-testimonio span {
+    font-size: 0.85rem;
+    color: #6a7b83;
+}
+
+/*llamada a la accion/formulario*/
+.cta-contacto {
+    background-color: var(--color-acento);
+}
+
+.formulario-contacto {
+    background-color: #FFFFFF;
+    border-radius: var(--radio-borde);
+    padding: var(--espacio-lg);
+    box-shadow: var(--sombra-suave);
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+.formulario-contacto .form-control,
+.formulario-contacto .form-select {
+    border-radius: 0.6rem;
+    border: 1px solid #c9d3d7;
+    padding: 0.6rem 0.9rem;
+}
+
+.formulario-contacto .form-control:focus,
+.formulario-contacto .form-select:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.2rem rgba(64, 90, 103, 0.18);
+}
+
+/*pie de pagina*/
+.pie-pagina {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+}
+
+.pie-pagina h3 {
+    color: var(--color-texto-claro);
+}
+
+.pie-pagina a {
+    color: var(--color-fondo);
+}
+
+.pie-pagina a:hover {
+    color: var(--color-texto-claro);
+}
+
+.pie-pagina .redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.pie-pagina .redes-sociales a:hover {
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+}
+
+.pie-pagina hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.derechos-reservados {
+    font-size: 0.85rem;
+    text-align: center;
+    color: var(--color-fondo);
+}
